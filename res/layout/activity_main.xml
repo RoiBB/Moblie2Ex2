@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/se_dept_map" />
+
+    <EditText
+        android:id="@+id/markerDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="161dp"
+        android:ems="10"
+        android:hint="Marker description" />
+
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/markerDescription"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="48dp"
+        android:text="Remove" />
+
+    <Button
+        android:id="@+id/changeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/removeButton"
+        android:layout_alignBottom="@+id/removeButton"
+        android:layout_alignLeft="@+id/markerDescription"
+        android:text="Change" />
+
+</RelativeLayout>
